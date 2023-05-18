@@ -1,0 +1,37 @@
+select `values.executionHistory.metadata.scheduledTransactionAuthorized.transactionId` 
+as "transaction_id",
+`values.executionHistory.metadata.scheduledTransactionAuthorized.recipientId`
+as "recipient_id",
+`values.executionHistory.metadata.scheduledTransactionAuthorized.merchantName`
+as "merchantName",
+`values.executionHistory.metadata.scheduledTransactionAuthorized.merchantId`
+as "merchantId",
+`values.executionHistory.metadata.scheduledTransactionAuthorized.maxExemptHealthInsurance.amountInCents`
+as "maxExemptHealthInsurance_InCents",
+`values.executionHistory.metadata.scheduledTransactionAuthorized.localIsoTime`
+as "localIsoTime",
+`values.executionHistory.metadata.scheduledTransactionAuthorized.fromFundsNotExempt.amountInCents`
+as "fromFundsNotExempt_InCents",
+`values.executionHistory.metadata.scheduledTransactionAuthorized.fromFunds.amountInCents`
+as "fromFunds_InCents",
+`values.executionHistory.metadata.scheduledTransactionAuthorized.fromFlex.amountInCents`
+as "fromFlex_InCents",
+`values.executionHistory.metadata.scheduledTransactionAuthorized.fromAccumulatedFlex.amountInCents`
+as "fromAccumulatedFlex_InCents",
+`values.executionHistory.metadata.scheduledTransactionAuthorized.flexNotExempt.amountInCents`
+as "fromNotExempt_InCents",
+`values.executionHistory.metadata.scheduledTransactionAuthorized.firstPaymentTimestamp`
+as "FirstPaymentTimestamp",
+`values.executionHistory.metadata.scheduledTransactionAuthorized.employeeId`
+as "employeeId",
+`values.executionHistory.metadata.scheduledTransactionAuthorized.concept`
+as "concept",
+`values.executionHistory.metadata.scheduledTransactionAuthorized.companyId`
+as "companyId",
+`values.executionHistory.metadata.scheduledTransactionAuthorized.brand`
+as "brand",
+`values.executionHistory.metadata.scheduledTransactionAuthorized.amount.amountInCents`
+as "amount_InCents",
+`values.executionHistory.metadata.transaction.state`
+as "transaction_state"
+from `backend-db`.`health-insurance-action-logs_values_executionHistory`
